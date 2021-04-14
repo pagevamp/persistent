@@ -1,0 +1,48 @@
+html,
+body {
+    height: auto;
+    font-size: 10px;
+    position: relative;
+    // overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; // Makes the smooth scrolling on ios devices
+}
+
+body {
+    font-size: rem(15px);
+    line-height: rem(25px);
+    letter-spacing: normal;
+    @include font-smoothing(on);
+    @include media-breakpoint-up(md) {
+        font-size: rem(15px);
+        line-height: rem(30px);
+    }
+}
+ 
+a {
+    color: $secondary;
+    @extend .transition-fast;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $primary;
+    }
+    // &:not([class]) {
+    //     text-decoration: none;
+    //     &:hover,
+    //     &:focus {
+    //         text-decoration: none;
+    //         color: $darkest;
+    //     }
+    // }
+}
+
+button,
+.btn,
+.btn-link {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}

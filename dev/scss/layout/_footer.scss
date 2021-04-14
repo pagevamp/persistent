@@ -1,0 +1,104 @@
+.#{$global} {
+    &-footer {
+        background-color: #ffffff;
+        .footer-block{
+            padding-left: 0px;
+            li{
+                list-style-type: none;
+            }
+            &--one{
+                li{
+                    font-weight: 700;
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                    a{
+                        color: #000000;;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &--two,
+            &--three{
+                li{
+                    &:first-child{
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: #eeeeee;
+                    }
+                    a{
+                        color: #000000;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+        }
+        .hiring{
+            background-color: #eeeeee;
+            padding: 50px 35px;
+            h4{
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.5px;
+            }
+            a{
+                color:#FD5F07 ;
+            }
+        }
+        .bottom-footer{
+            padding: 15px 0px;
+            .footer-nav{
+                ul{
+                    padding: 0px;
+                    margin: 0px;
+                    text-align: center;
+                    li{
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-right: 20px;
+                        position: relative;
+                        font-size: 12px;
+                        &::after{
+                           position: absolute;
+                           content: '';
+                           right: -10px;
+                            top: 2px;
+                           bottom: 0;
+                           margin:auto 0;
+                           height: 10px;
+                           width: 1px;
+                           background-color: #000000;
+                        }
+                        &:last-child::after{
+                            display: none;
+                        }
+                        a{
+                         color: #000000;
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .social-icons{
+                ul{
+                    padding-left: 0px;
+                    margin-bottom: 0px;
+                    text-align: right;
+                    li{
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-left: 10px;
+                        
+                    }
+                }
+            }
+           
+        }
+    }
+}

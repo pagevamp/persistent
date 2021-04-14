@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Gordita-bold';
+    src: url('#{$font-path}/GorditaBold.woff2') format('woff2'),
+        url('#{$font-path}/GorditaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita-medium';
+    src: url('#{$font-path}/GorditaMedium.woff2') format('woff2'),
+        url('#{$font-path}/GorditaMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita-regular';
+    src: url('#{$font-path}/GorditaRegular.woff2') format('woff2'),
+        url('#{$font-path}/GorditaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita-light';
+    src: url('#{$font-path}/GorditaLight.woff2') format('woff2'),
+        url('#{$font-path}/GorditaLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita-black';
+    src: url('#{$font-path}/GorditaBlack.woff2') format('woff2'),
+        url('#{$font-path}/GorditaBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

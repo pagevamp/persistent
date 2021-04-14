@@ -1,0 +1,21 @@
+.hr {
+    border: 0;
+    // border-bottom: 1px solid $gray-800;
+    border-bottom: 1px solid rgba(175, 164, 164, 0.5);
+    height: rem(1px);
+    @extend .d-block;
+    margin: 0;
+    padding: 0;
+    // @include opacity(0.5);
+    &--light {
+        border-color: $white;
+    }
+    &--dark {
+        border-color: $black;
+    }
+}
+
+.horizontal-divider {
+    height: rem(1px);
+    background: $gray-400;
+}

@@ -1,0 +1,39 @@
+// For Hover on Desktop
+@include media-breakpoint-up(lg) {
+    .nav-main .nav-item:hover > .dropdown-menu {
+        transition: all 0.1s ease 300ms;
+    }
+    .nav-main .nav-item > .dropdown-menu {
+        transition: none;
+    }
+    .theme-header {
+        transition: none;
+    }
+
+    .nav-item > .dropdown-menu,
+    .nav-item:hover > .dropdown-menu .dropdown .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.1s linear;
+        display: block;
+    }
+
+    .nav-item:hover > .dropdown-menu .dropdown .dropdown-menu {
+        left: 100%;
+        top: 0;
+    }
+
+    .nav-item:hover > .dropdown-menu {
+        // display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-item:hover > .dropdown-menu .dropdown:hover .dropdown-menu {
+        // display: block;
+        visibility: visible;
+        opacity: 1;
+        // left: 100%;
+        // top: 0;
+    }
+}

@@ -1,0 +1,236 @@
+// Font Face Categories
+.ff {
+    &-sans-serif {
+        font-family: $font-family-sans-serif !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+    }
+    &-sans-serif-italic {
+        font-family: $font-family-sans-serif !important;
+        font-weight: normal !important;
+        font-style: italic !important;
+    }
+    &-sans-serif-light {
+        font-family: $font-family-sans-serif !important;
+        font-weight: 300 !important;
+        font-style: normal !important;
+    }
+    &-sans-serif-bold {
+        font-family: $font-family-sans-serif !important;
+        font-weight: bold !important;
+        font-style: normal !important;
+    }
+}
+
+// Transitions
+.transition {
+    &-slow {
+        @include transition(all 0.5s ease);
+    }
+    &-fast {
+        @include transition(all 0.3s ease);
+    }
+}
+
+// Truncating the paragraphs
+.truncate {
+    &--1-line {
+        @include ellipsis(20px, 1);
+    }
+
+    &--2-line {
+        @include ellipsis(50px, 2);
+    }
+
+    &--3-line {
+        @include ellipsis(70px, 3);
+    }
+}
+
+// Background Variations
+.bg {
+    &-cover {
+        background-size: cover !important;
+    }
+    &-position {
+        &-center {
+            background-position: center center !important;
+        }
+    }
+    &-no-repeat {
+        background-repeat: no-repeat !important;
+    }
+}
+
+// Text Styling
+.text {
+    &-line-through {
+        text-decoration: line-through !important;
+    }
+    &-underline {
+        text-decoration: underline !important;
+    }
+}
+
+// Image Full Screen
+.full-screen {
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
+    @extend .bg-position-center;
+}
+
+// Positions
+.position {
+    &-l-0 {
+        left: 0 !important;
+    }
+    &-r-0 {
+        right: 0 !important;
+    }
+    &-b-0 {
+        bottom: 0 !important;
+    }
+    &-t-0 {
+        top: 0 !important;
+    }
+    &-lt-0 {
+        @extend .position-l-0;
+        @extend .position-t-0;
+    }
+    &-rt-0 {
+        @extend .position-r-0;
+        @extend .position-t-0;
+    }
+    &-lb-0 {
+        @extend .position-l-0;
+        @extend .position-b-0;
+    }
+}
+
+// Opacity
+.opacity {
+    &-0 {
+        @include opacity(0);
+    }
+    &-1 {
+        @include opacity(1);
+    }
+    &-2 {
+        @include opacity(0.2);
+    }
+    &-3 {
+        @include opacity(0.3);
+    }
+    &-4 {
+        @include opacity(0.4);
+    }
+    &-5 {
+        @include opacity(0.5);
+    }
+    &-6 {
+        @include opacity(0.6);
+    }
+    &-7 {
+        @include opacity(0.7);
+    }
+    &-8 {
+        @include opacity(0.8);
+    }
+    &-9 {
+        @include opacity(0.9);
+    }
+}
+
+// Overflow Variations
+.overflow {
+    &-x {
+        overflow-x: hidden !important;
+    }
+    &-y {
+        overflow-y: hidden !important;
+    }
+}
+
+// Background Cover Overlay
+.overlay {
+    background-color: $black;
+    @extend .h-100;
+    @extend .w-100;
+    @extend .position-absolute;
+    @extend .position-t-0;
+    @extend .position-l-0;
+    &--1 {
+        @extend .opacity-1;
+    }
+    &--2 {
+        @extend .opacity-2;
+    }
+    &--3 {
+        @extend .opacity-3;
+    }
+    &--4 {
+        @extend .opacity-4;
+    }
+    &--5 {
+        @extend .opacity-5;
+    }
+    &--6 {
+        @extend .opacity-6;
+    }
+}
+
+// Image Overlay
+.img-overlay-opacity {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: $gray-200;
+        @extend .h-100;
+        @extend .w-100;
+        @extend .position-absolute;
+        @extend .position-t-0;
+        @extend .position-l-0;
+        @extend .opacity-3;
+    }
+}
+
+// Width Variations
+.w {
+    &-100-vw {
+        width: 100vw;
+    }
+}
+
+// Text Indention For Hiding
+.text {
+    &-indent {
+        text-indent: rem(-9999px) !important;
+    }
+    &-indent-0 {
+        text-indent: 0 !important;
+    }
+}
+
+// Image Fit
+.object {
+    &-fit {
+        object-fit: cover;
+    }
+    &-position {
+        &-center {
+            object-position: center;
+        }
+    }
+}
+
+// List Items
+.list {
+    &-unstyled {
+        > li {
+            @extend .pl-0;
+            &::before {
+                @extend .d-none;
+            }
+        }
+    }
+}

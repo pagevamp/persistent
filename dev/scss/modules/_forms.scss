@@ -1,0 +1,43 @@
+.form-control {
+    background-color: transparent;
+    border: none;
+    min-height: rem(40px);
+    padding: 0;
+    font-size: rem(12px);
+    line-height: rem(24px);
+    @extend .transition-fast;
+    border-radius: 0;
+    @include media-breakpoint-up(md) {
+        font-size: rem(24px);
+        line-height: rem(32px);
+    }
+    &:focus {
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0;
+    }
+    &::placeholder {
+        color: $gray-500;
+        @extend .opacity-4;
+    }
+}
+
+input,
+.btn,
+button {
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0;
+    }
+}
+
+// input:-internal-autofill-selected {
+//     background-color: transparent !important;
+// }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 130px white inset !important;
+}
