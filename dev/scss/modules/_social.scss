@@ -1,0 +1,18 @@
+.social {
+    @extend .d-flex;
+    > li {
+        margin-left: rem(20px);
+        @extend .p-0;
+        @extend .mb-0;
+        &:first-child {
+            margin-left: 0;
+        }
+        &::before {
+            content: "";
+            @extend .d-none;
+        }
+        a {
+            @extend .d-block;
+        }
+    }
+}

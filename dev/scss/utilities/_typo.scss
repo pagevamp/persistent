@@ -1,0 +1,156 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.h1,
+.h2,
+.h3,
+.h4 {
+    @extend %heading;
+}
+
+h1,
+.h1 {
+    font-size: rem(60px);
+    line-height: rem(75px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(80px);
+        line-height: rem(100px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(100px);
+        line-height: rem(125px);
+    }
+}
+
+h2,
+.h2 {
+    font-size: rem(50px);
+    line-height: rem(65px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(65px);
+        line-height: rem(80px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(85px);
+        line-height: rem(100px);
+    }
+}
+
+h3,
+.h3 {
+    font-size: rem(35px);
+    line-height: rem(50px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(45px);
+        line-height: rem(60px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(65px);
+        line-height: rem(80px);
+    }
+}
+
+h4,
+.h4 {
+    font-size: rem(25px);
+    line-height: rem(35px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(35px);
+        line-height: rem(50px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(45px);
+        line-height: rem(60px);
+    }
+}
+
+h5,
+.h5 {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(25px);
+        line-height: rem(35px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(30px);
+        line-height: rem(40px);
+    }
+}
+
+h6,
+.h6 {
+    font-size: rem(15px);
+    line-height: rem(25px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(18px);
+        line-height: rem(25px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(20px);
+        line-height: rem(30px);
+    }
+}
+
+.display-1 {
+    font-size: rem(50px);
+    line-height: rem(51px);
+    @include media-breakpoint-up(sm) {
+        font-size: rem(75px);
+        line-height: rem(70px);
+    }
+    @include media-breakpoint-up(md) {
+        font-size: rem(122px);
+        line-height: rem(113px);
+    }
+}
+
+.strapline {
+    @extend .ff-sans-serif;
+    font-size: rem(12px);
+    line-height: rem(15px);
+    letter-spacing: rem(0.05px);
+    @include media-breakpoint-up(md) {
+        font-size: rem(15px);
+        line-height: rem(20px);
+        letter-spacing: rem(0.25px);
+    }
+}
+
+p {
+    margin-bottom: rem(30px);
+    &:last-child {
+        @extend .mb-0;
+    }
+}
+
+.p {
+    &-sm {
+        font-size: rem(10px);
+        line-height: rem(17px);
+        @include media-breakpoint-up(md) {
+            font-size: rem(15px);
+            line-height: rem(30px);
+        }
+    }
+    &-md {
+        font-size: rem(12px);
+        line-height: rem(20px);
+        @include media-breakpoint-up(md) {
+            font-size: rem(18px);
+            line-height: rem(35px);
+        }
+    }
+    &-lg {
+        font-size: rem(18px);
+        line-height: rem(25px);
+        @include media-breakpoint-up(md) {
+            font-size: rem(22px);
+            line-height: rem(40px);
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html')
+    </head>
+
+    <!-- <body class="nav-dark"> -->
+    <body class="nav-light">
+        <!-- <body> -->
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap">
+                @@include('includes/header.html')
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content">
+                        @@include('includes/offcanvas.html')
+                    </div>
+                </div>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+                <main class="theme-main">
+
+                    <header style="padding-top: 125px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="h4">Completed Sections</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- <hr class="my-11" />
+                    @@include('includes/modules/slider/slider-02-full.html') -->
+                        
+                </main>
+            </div>
+            @@include('includes/footer.html')
+        </div>
+    </body>
+</html>

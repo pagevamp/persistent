@@ -1,0 +1,45 @@
+.custom-loader {
+    @extend .position-relative;
+    width: rem(12px);
+    margin-left: rem(8px);
+    @include media-breakpoint-up(md) {
+        width: rem(18px);
+    }
+
+    span {
+        border: 2px solid $white;
+        width: rem(12px);
+        height: rem(12px);
+        @extend .d-block;
+        @extend .position-absolute;
+        border-radius: 100%;
+        animation: custom-loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: $white transparent transparent transparent;
+
+        @include media-breakpoint-up(md) {
+            width: rem(18px);
+            height: rem(18px);
+        }
+
+        &:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        .custom-loader span:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+    }
+}
+
+@keyframes custom-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,32 @@
+.product{
+    background-color: #ffffff;
+    padding: 55px 25px;
+    margin-bottom: 20px;
+    &__title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #231E28;
+        line-height: 26px;
+    }
+    &__description{
+        font-size:15px;
+        color:grey;
+        line-height: 26px;
+        font-weight: 400;
+    }
+} 
+
+.block{
+    &__title{
+       font-size: 20px;
+       line-height: 30px;
+       font-weight: 700;
+       color: #231E28; 
+    }
+    &__description{
+        font-size: 15px;
+        line-height: 26px;
+        color: #19151C;
+    }
+}

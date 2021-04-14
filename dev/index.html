@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html')
+    </head>
+
+    <body class="nav-dark">
+    <!-- <body class="nav-light"> -->
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap">
+                @@include('includes/header.html')
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content">
+                        @@include('includes/offcanvas.html')
+                    </div>
+                </div>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+                <main class="theme-main">
+                    @@include('includes/modules/hero/banner.html')
+                    @@include('includes/modules/section/info.html')
+                    @@include('includes/modules/section/offerings.html')
+                    @@include('includes/modules/section/slider.html')
+                    @@include('includes/modules/section/why-persistent.html')
+                    @@include('includes/modules/section/contactus.html')
+                </main>
+            </div>
+            @@include('includes/footer.html')
+        </div>
+    </body>
+</html>

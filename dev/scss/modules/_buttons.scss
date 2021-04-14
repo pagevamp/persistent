@@ -1,0 +1,32 @@
+.btn {
+    border-width: rem(1px);
+    font-weight: bold !important;
+    border-radius: rem(37px);
+    &.disabled,
+    &:disabled {
+        @extend .opacity-2;
+    }
+}
+
+a,
+button,
+.btn {
+    @extend .transition-fast;
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-primary{
+    color: #ffffff;
+    background-color: #FD5F07;
+    border-radius: 40px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    &:hover{
+        background-color: #b34306;
+    }
+}
