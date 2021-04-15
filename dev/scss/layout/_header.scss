@@ -17,10 +17,18 @@
 }
 
 .nav-main{
-    .nav-link{
-        color: #ffffff;
-        font-size: 14px;
-        letter-spacing: 0.5px;
+    .nav-item{
+        .nav-link{
+            color: #ffffff;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            font-weight: 300;
+        }
+        &.active{
+            .nav-link{
+                font-weight: 500;
+            }
+        }
     }
 }
 

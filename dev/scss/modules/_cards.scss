@@ -14,6 +14,10 @@
         color:grey;
         line-height: 26px;
         font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 } 
 
@@ -28,5 +32,10 @@
         font-size: 15px;
         line-height: 26px;
         color: #19151C;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    
     }
 }

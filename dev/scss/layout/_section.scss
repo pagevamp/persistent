@@ -11,7 +11,7 @@
     }
 }
 
-
+ 
 .contactUs{
     padding: 115px 0px;
     margin-bottom: 55px;
@@ -21,12 +21,13 @@
         font-size: 45px;
         font-weight: 900;
         margin-bottom: 10px;
+        line-height: 40px;
     }
     .sub-title{
         color: $white;
         font-size: 18px;
         line-height: 32px;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .contactus-form{
@@ -50,8 +51,8 @@
         }
         .btn-primary{
             background-color: $white;
-            color: grey;
-            border-radius:25px;
+            color: #000000;
+            border-radius:25px; 
             padding: 8px 25px;
             border: none;
             font-weight: 700;
@@ -66,50 +67,10 @@
     margin-bottom: 55px;
     background-color: #ffffff;
     position: relative;
-    .banner-text{
-        position: absolute;
-        top: -300px;
-        left: 0;
-        background-color:#231E28;
-        max-width: 80%;
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
-        &__title{
-        grid-column: 1/8;
-        padding: 100px 0px;
-        padding-left: 45%;
-            h1{
-                color: #ffffff;
-                font-size: 56px;
-                line-height: 74px;
-            }
-            p{
-                color: #868C92;
-                line-height: 26px;
-                font-size: 20px;
-            }
-        }
-        &__link{
-            background-color: #342E39;
-            grid-column: 9/13;
-            padding: 100px 50px;
-            display: grid;
-            grid-template-rows: 1fr;
-            p{
-                color:#FD5F07 ;
-                margin-bottom: 10px;
-                align-self: end;
-            }
-            a{
-                color: #ffffff;
-                font-size: 18px;
-                font-weight: 700;
-                line-height: 26px;
-                align-self: end;
-            }
-        }
+    p{
+        font-size: 18px;
+        line-height: 30px;
     }
-    
 }
 
 .whyPersistent{
@@ -139,10 +100,30 @@
 
 .homepage-slider{
     background-color: #231E28;
+    padding-bottom: 70px;
     .slider{
         &__content{
-            padding: 50px;
+            padding: 50px 0px;
+            padding-left: 13px;    
             &__text{
+                &__logo{
+                    ul{
+                        padding: 0px;
+                        margin-bottom: 15px;
+                        letter-spacing: 0.5px;
+                        li{
+                            color: #ffffff;
+                            list-style-type: none;
+                            display: inline-block;
+                            margin-right: 20px;
+                            font-size: 18px;
+                            font-weight: 700;
+                            &:first-child{
+                                color: #868C92;
+                            }
+                        }
+                    }
+                }
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -153,6 +134,55 @@
                     font-size: 42px;
                     line-height: 50px;
                 }
+            }
+        }
+
+        .slick-dots{
+            text-align: left;
+            bottom: -50px;
+            li{
+                width: 100px;
+                button{
+                    &:before{
+                        background-color: #ffffff;
+                        content: '';
+                        width: 99px;
+                        height: 2px;
+                        opacity: 1;
+                    }
+                }
+                &.slick-active{
+                    button{
+                        &:before{
+                            background-color: #FD5F07;
+                            content: '';
+                            width: 99px;
+                            height: 2px;
+                            opacity: 1;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .slick-prev,
+        .slick-next{
+            bottom: -25px;
+            top: auto;
+        }
+
+        .slick-prev{
+            right: 100px;
+            left: auto;
+            &::before{
+                font-size: 50px;
+            }
+        }
+        .slick-next{
+            right: 0px;
+            &::before{
+                font-size: 50px;
             }
         }
     }
